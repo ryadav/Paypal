@@ -9,23 +9,33 @@
 /* Begin PBXBuildFile section */
 		3B1E3FFC2CC911600058254F /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3B1E3FFB2CC911600058254F /* AppDelegate.swift */; };
 		3B1E3FFE2CC911600058254F /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3B1E3FFD2CC911600058254F /* SceneDelegate.swift */; };
-		3B1E40002CC911600058254F /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3B1E3FFF2CC911600058254F /* ViewController.swift */; };
 		3B1E40032CC911600058254F /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 3B1E40012CC911600058254F /* Main.storyboard */; };
 		3B1E40062CC911600058254F /* DemoApp.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 3B1E40042CC911600058254F /* DemoApp.xcdatamodeld */; };
 		3B1E40082CC911610058254F /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 3B1E40072CC911610058254F /* Assets.xcassets */; };
 		3B1E400B2CC911610058254F /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 3B1E40092CC911610058254F /* LaunchScreen.storyboard */; };
+		3B1E40142CC9118F0058254F /* APODModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3B1E40132CC9118F0058254F /* APODModel.swift */; };
+		3B1E40172CC911AC0058254F /* APODService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3B1E40162CC911AC0058254F /* APODService.swift */; };
+		3B1E401A2CC911E70058254F /* APODTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3B1E40192CC911E70058254F /* APODTableViewController.swift */; };
+		3B1E401D2CC9122E0058254F /* ImageCacher.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3B1E401C2CC9122E0058254F /* ImageCacher.swift */; };
+		3B1E40202CC914CB0058254F /* APODTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3B1E401F2CC914CB0058254F /* APODTableViewCell.swift */; };
+		3B1E40232CC919AD0058254F /* APODViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3B1E40222CC919AC0058254F /* APODViewModel.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
 		3B1E3FF82CC911600058254F /* DemoApp.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = DemoApp.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		3B1E3FFB2CC911600058254F /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		3B1E3FFD2CC911600058254F /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
-		3B1E3FFF2CC911600058254F /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
 		3B1E40022CC911600058254F /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		3B1E40052CC911600058254F /* DemoApp.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = DemoApp.xcdatamodel; sourceTree = "<group>"; };
 		3B1E40072CC911610058254F /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		3B1E400A2CC911610058254F /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		3B1E400C2CC911610058254F /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		3B1E40132CC9118F0058254F /* APODModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = APODModel.swift; sourceTree = "<group>"; };
+		3B1E40162CC911AC0058254F /* APODService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = APODService.swift; sourceTree = "<group>"; };
+		3B1E40192CC911E70058254F /* APODTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = APODTableViewController.swift; sourceTree = "<group>"; };
+		3B1E401C2CC9122E0058254F /* ImageCacher.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ImageCacher.swift; sourceTree = "<group>"; };
+		3B1E401F2CC914CB0058254F /* APODTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = APODTableViewCell.swift; sourceTree = "<group>"; };
+		3B1E40222CC919AC0058254F /* APODViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = APODViewModel.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -60,7 +70,12 @@
 			children = (
 				3B1E3FFB2CC911600058254F /* AppDelegate.swift */,
 				3B1E3FFD2CC911600058254F /* SceneDelegate.swift */,
-				3B1E3FFF2CC911600058254F /* ViewController.swift */,
+				3B1E40122CC911790058254F /* Model */,
+				3B1E401E2CC9149B0058254F /* View */,
+				3B1E40212CC919990058254F /* ViewModel */,
+				3B1E40182CC911C10058254F /* Controller */,
+				3B1E401B2CC912200058254F /* IImageCacher */,
+				3B1E40152CC9119C0058254F /* Network */,
 				3B1E40012CC911600058254F /* Main.storyboard */,
 				3B1E40072CC911610058254F /* Assets.xcassets */,
 				3B1E40092CC911610058254F /* LaunchScreen.storyboard */,
@@ -68,6 +83,54 @@
 				3B1E40042CC911600058254F /* DemoApp.xcdatamodeld */,
 			);
 			path = DemoApp;
+			sourceTree = "<group>";
+		};
+		3B1E40122CC911790058254F /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				3B1E40132CC9118F0058254F /* APODModel.swift */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		3B1E40152CC9119C0058254F /* Network */ = {
+			isa = PBXGroup;
+			children = (
+				3B1E40162CC911AC0058254F /* APODService.swift */,
+			);
+			path = Network;
+			sourceTree = "<group>";
+		};
+		3B1E40182CC911C10058254F /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+				3B1E40192CC911E70058254F /* APODTableViewController.swift */,
+			);
+			path = Controller;
+			sourceTree = "<group>";
+		};
+		3B1E401B2CC912200058254F /* IImageCacher */ = {
+			isa = PBXGroup;
+			children = (
+				3B1E401C2CC9122E0058254F /* ImageCacher.swift */,
+			);
+			path = IImageCacher;
+			sourceTree = "<group>";
+		};
+		3B1E401E2CC9149B0058254F /* View */ = {
+			isa = PBXGroup;
+			children = (
+				3B1E401F2CC914CB0058254F /* APODTableViewCell.swift */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		3B1E40212CC919990058254F /* ViewModel */ = {
+			isa = PBXGroup;
+			children = (
+				3B1E40222CC919AC0058254F /* APODViewModel.swift */,
+			);
+			path = ViewModel;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -141,10 +204,15 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				3B1E40002CC911600058254F /* ViewController.swift in Sources */,
+				3B1E40232CC919AD0058254F /* APODViewModel.swift in Sources */,
 				3B1E3FFC2CC911600058254F /* AppDelegate.swift in Sources */,
+				3B1E40202CC914CB0058254F /* APODTableViewCell.swift in Sources */,
 				3B1E40062CC911600058254F /* DemoApp.xcdatamodeld in Sources */,
+				3B1E40142CC9118F0058254F /* APODModel.swift in Sources */,
 				3B1E3FFE2CC911600058254F /* SceneDelegate.swift in Sources */,
+				3B1E401D2CC9122E0058254F /* ImageCacher.swift in Sources */,
+				3B1E40172CC911AC0058254F /* APODService.swift in Sources */,
+				3B1E401A2CC911E70058254F /* APODTableViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
