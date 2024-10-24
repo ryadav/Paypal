@@ -9,7 +9,6 @@ import UIKit
 
 class APODTableViewCell: UITableViewCell {
     
-    // ImageView to display the APOD image
     let apodImageView: UIImageView = {
         let imageView = UIImageView()
         imageView.translatesAutoresizingMaskIntoConstraints = false
@@ -19,7 +18,6 @@ class APODTableViewCell: UITableViewCell {
         return imageView
     }()
     
-    // Activity Indicator for loading images
     let activityIndicator: UIActivityIndicatorView = {
         let indicator = UIActivityIndicatorView(style: .medium)
         indicator.translatesAutoresizingMaskIntoConstraints = false
@@ -27,7 +25,6 @@ class APODTableViewCell: UITableViewCell {
         return indicator
     }()
     
-    // Label to display the title
     let titleLabel: UILabel = {
         let label = UILabel()
         label.translatesAutoresizingMaskIntoConstraints = false

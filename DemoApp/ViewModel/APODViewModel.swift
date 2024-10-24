@@ -13,8 +13,8 @@ class APODViewModel {
     // MARK: - Properties
     private var apodService: APODService
     private var apodList: [APODModel] = []
-    private var currentPage: Int = 1
-    private var isFetching: Bool = false
+    var currentPage: Int = 1
+    var isFetching: Bool = false
     var onDataFetched: (() -> Void)?
     
     // MARK: - Initializer
@@ -33,12 +33,10 @@ class APODViewModel {
         apodService.fetchPictures(startDate: startDate, endDate: endDate) { [weak self] apods in
             guard let self = self, let apods = apods else { return }
             
-            // Append new data to the list and inform the view to update
             self.apodList.append(contentsOf: apods.reversed())
             self.currentPage += 1
             self.isFetching = false
             
-            // Notify the view controller that data has been fetched
             DispatchQueue.main.async {
                 self.onDataFetched?()
             }
