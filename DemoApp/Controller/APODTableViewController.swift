@@ -46,11 +46,10 @@ class APODTableViewController: UITableViewController {
             if let cachedImage = ImageCacheManager.shared.getCachedImage(for: imageURL) {
                 cell.stopLoading(with: cachedImage)
             } else {
-                let currentIndexPath = indexPath
                 ImageCacheManager.shared.fetchImage(from: imageURL) { [weak self] image in
                     guard let self = self else { return }
                     
-                    if let visibleIndexPath = self.tableView.indexPath(for: cell), visibleIndexPath == currentIndexPath {
+                    if let visibleIndexPath = self.tableView.indexPath(for: cell), visibleIndexPath == indexPath {
                         cell.stopLoading(with: image)
                     }
                 }
@@ -59,7 +58,7 @@ class APODTableViewController: UITableViewController {
             cell.stopLoading(with: nil)
         }
         
-        if indexPath.row == viewModel.numberOfItems() - 1 {
+        if indexPath.row >= viewModel.numberOfItems() - 3 && !viewModel.isFetching {
             viewModel.fetchAPODs()
         }
         
